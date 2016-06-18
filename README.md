@@ -22,12 +22,18 @@
     相连 想带
 
 
-####代码说明
+####代码说明:
 
 TrainWordLSTM.java  : <br>
 >此代码会训练一个 LSTM Model ，输入 Word Sequence，预测下一个可能出现的文字。<br>
 AIWordsWriter.java  : <br>
 >此代码会载入训练好的 LSTM Model，输入一个词(Word)，输入文章内容。<br>
+
+####Dependency: 
+Deeplearning4j(dl4j)
+JBlas
+
+
 
 
 
