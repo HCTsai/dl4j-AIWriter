@@ -23,7 +23,7 @@
 
 ####实施方法(Implementation)：
 
-![arch](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-longtermdependencies.png) 
+![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
 
 语料准备(Prerequisite)：
