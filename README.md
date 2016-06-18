@@ -1,5 +1,8 @@
+Writing technical patent with personality based on AI<br>
+===
+
 人工智能模仿名人风格写发明专利 <br>
-(Writing technical patent with personality based on AI)<br>
+
 范例：模仿周杰伦歌曲风格写发明专利
 
     温柔本人体是的手机设定进行的 
