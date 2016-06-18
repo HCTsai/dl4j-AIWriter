@@ -1,7 +1,9 @@
 ###人工智能模仿`名人性格`写中国发明专利 <br>
 #####Writing technical patent in Chinese with personality based on RNN with LSTM<br>
 
+
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
+
 
 ####范例：模仿 `周杰伦` 写发明专利:
 #####Example: Writing a patent by Jay style
