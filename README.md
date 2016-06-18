@@ -32,7 +32,8 @@
 
 * 1.将周杰伦歌词进行分词(Word Segmentation)。<br>
 * 2.将专利样本文件进行分词。<br>
-* 3.将周杰伦歌词与专利文件清洗掉特殊标点符号后，以句子为单位交错(Shuffle)成一份新的语料。(segres_patent_jay.txt)<br>
+* 3.将周杰伦歌词与专利文件清洗掉特殊标点符号。<br>
+* 4.以句子为单位交错(Shuffle)成一份新的语料，使模型可学习到两种不同语料的概念。(参考:data/segres_patent_jay.txt)<br>
    
 模型训练(Model Training):
 
