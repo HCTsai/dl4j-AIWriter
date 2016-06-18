@@ -3,7 +3,7 @@
 
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
-范例：模仿 `周杰伦歌曲风格` 写发明专利
+####范例：模仿 `周杰伦歌曲风格` 写发明专利:
 
     温柔本人体是的手机设定进行的 
     调节对比从方法 冷一电路板 智能 
