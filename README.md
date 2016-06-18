@@ -23,6 +23,9 @@
 
 ####实施方法(Implementation)：
 
+![arch](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-longtermdependencies.png) 
+
+
 语料准备(Prerequisite)：
 
 * 1.将周杰伦歌词，整理成一份分词(Word Segmentation)后的文件。<br>
@@ -31,7 +34,7 @@
    
 模型训练(Model Training):
 
-* 1.使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
+* 使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
 
 文章产生:
 
