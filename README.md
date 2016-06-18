@@ -43,13 +43,13 @@
 * 若机率向量中，每个词的输出机率都差不多，则输出随机范围中，最高机率的词。(随机浪漫)<br>
 
 
-####代码说明:
+####重要代码说明:
 
 TrainWordLSTM.java  : <br>
 >此代码会训练一个 LSTM Model ，输入 Word Sequence，预测下一个可能出现的文字。<br>
 
 AIWordsWriter.java  : <br>
->此代码会载入训练好的 LSTM Model，输入一个词(Word)，输入文章内容。<br>
+>此代码会载入训练好的 LSTM Model，输入一个起始词(Word)，输出文章内容。<br>
 
 ####Requirements: 
 >Deeplearning4j(dl4j)<br>
@@ -58,7 +58,7 @@ AIWordsWriter.java  : <br>
 ####Materials:
 
 <p>A serias of Recurrent Neural Networks Tutorial:</p>
-
+![arch](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-longtermdependencies.png) 
 <ol>
 <li><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></li>
 <li><a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">Introduction to RNNs</a></li>
