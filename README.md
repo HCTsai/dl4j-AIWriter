@@ -1,5 +1,5 @@
-人工智能模仿名人风格写发明专利 
-(Writing technical patent with personality based on AI)
+人工智能模仿名人风格写发明专利 <br>
+(Writing technical patent with personality based on AI)<br>
 范例：模仿周杰伦歌曲风格写发明专利
 
     温柔本人体是的手机设定进行的 
@@ -25,11 +25,4 @@ TrainWordLSTM.java  : <br>
 此代码会训练一个 LSTM Model ，输入 Word Sequence，预测下一个可能出现的文字。<br>
 AIWordsWriter.java  : <br>
 此代码会载入训练好的 LSTM Model，输入一个词(Word)，输入文章内容。
-
-
-
-
-
-
-
 
