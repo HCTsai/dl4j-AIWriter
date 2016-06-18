@@ -1,5 +1,5 @@
-###Writing technical patent with personality based on AI<br>
 ###人工智能模仿名人风格写发明专利 <br>
+###Writing technical patent with personality based on RNN with LSTM<br>
 
 范例：模仿 `周杰伦歌曲风格` 写发明专利
 
