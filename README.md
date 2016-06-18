@@ -48,7 +48,7 @@ TrainWordLSTM.java  : <br>
 AIWordsWriter.java  : <br>
 >此代码会载入训练好的 LSTM Model，输入一个词(Word)，输入文章内容。<br>
 
-####Dependency: 
+####Requirements: 
 >Deeplearning4j(dl4j)<br>
 >JBlas
 
