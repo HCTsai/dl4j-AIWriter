@@ -52,6 +52,15 @@ AIWordsWriter.java  : <br>
 >Deeplearning4j(dl4j)<br>
 >JBlas
 
+####Materials:
+
+<p>A serias of Recurrent Neural Networks Tutorial:</p>
+
+<ol>
+<li><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></li>
+<li><a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">Introduction to RNNs</a></li>
+<li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
+</ol>
 
 
 
