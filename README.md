@@ -25,14 +25,13 @@
 
 * 语料准备(Prerequisite)：
 
-1. 将周杰伦歌词，整理成一份分词(Word Segmentation)后的文件。
-2. 将专利文件，整理成一份分词后的文件。
-3. 将周杰伦歌词与专利文件清洗掉特殊标点符号后，以句子为单位交错(Shuffle)成一份新的语料。(segres_patent_jay.txt)
+** 将周杰伦歌词，整理成一份分词(Word Segmentation)后的文件。
+** 将专利文件，整理成一份分词后的文件。
+** 将周杰伦歌词与专利文件清洗掉特殊标点符号后，以句子为单位交错(Shuffle)成一份新的语料。(segres_patent_jay.txt)
    
 * 模型训练(Model Training)
 
-使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
-
+** 使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
 
 * 文章产生
 
