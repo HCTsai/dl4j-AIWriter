@@ -1,5 +1,5 @@
-###人工智能模仿`名人性格`写发明专利 <br>
-###Writing technical patent with personality based on RNN with LSTM<br>
+###人工智能模仿`名人性格`写中国发明专利 <br>
+#####Writing technical patent in Chinese with personality based on RNN with LSTM<br>
 
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
