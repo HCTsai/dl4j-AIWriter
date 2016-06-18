@@ -21,17 +21,37 @@
     方式 智能控制器特征在于 控制器室内发出  
     相连 想带
 
+####实施方法(Implementation)：
+
+* 语料准备(Prerequisite)：
+
+1. 将周杰伦歌词，整理成一份分词(Word Segmentation)后的文件。
+2. 将专利文件，整理成一份分词后的文件。
+3. 将周杰伦歌词与专利文件清洗掉特殊标点符号后，以句子为单位交错(Shuffle)成一份新的语料。(segres_patent_jay.txt)
+   
+* 模型训练(Model Training)
+
+使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
+
+
+* 文章产生
+
+1.将句子输入模型，产生下一个输出词的机率向量。
+2.若机率向量有显著高于平均机率的词，直接输出高机率的词。（稳定理性）
+3.若机率向量中，每个词的输出机率都差不多，则输出随机范围中，最高机率的词。(随机浪漫)
+
 
 ####代码说明:
 
 TrainWordLSTM.java  : <br>
 >此代码会训练一个 LSTM Model ，输入 Word Sequence，预测下一个可能出现的文字。<br>
+
 AIWordsWriter.java  : <br>
 >此代码会载入训练好的 LSTM Model，输入一个词(Word)，输入文章内容。<br>
 
 ####Dependency: 
-Deeplearning4j(dl4j)
-JBlas
+>Deeplearning4j(dl4j)<br>
+>JBlas
 
 
 
