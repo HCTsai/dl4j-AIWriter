@@ -1,6 +1,8 @@
 ###人工智能模仿名人风格写发明专利 <br>
 ###Writing technical patent with personality based on RNN with LSTM<br>
 
+![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
+
 范例：模仿 `周杰伦歌曲风格` 写发明专利
 
     温柔本人体是的手机设定进行的 
@@ -23,7 +25,7 @@
 
 ####实施方法(Implementation)：
 
-![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
+
 
 
 语料准备(Prerequisite)：
