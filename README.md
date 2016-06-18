@@ -1,4 +1,4 @@
-###人工智能模仿`名人性格`写中国发明专利 <br>
+###人工智能模仿`名人性格`写发明专利 <br>
 #####Writing a invention patent that imitates somebody's style based on RNN with LSTM<br>
 
 
