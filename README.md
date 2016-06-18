@@ -5,7 +5,7 @@
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
 
-####范例：模仿 `周杰伦` 写发明专利:
+####范例：模仿 `周杰伦` 风格写发明专利:
 #####Example: Writing a patent by Jay style
 
     温柔本人体是的手机设定进行的 
