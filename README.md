@@ -3,7 +3,8 @@
 
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
-####范例：模仿 `周杰伦歌曲风格` 写发明专利:
+####范例：模仿 `周杰伦` 写发明专利:
+#####Example: Writing a patent by Jay style
 
     温柔本人体是的手机设定进行的 
     调节对比从方法 冷一电路板 智能 
@@ -25,13 +26,10 @@
 
 ####实施方法(Implementation)：
 
-
-
-
 语料准备(Prerequisite)：
 
-* 1.将周杰伦歌词，整理成一份分词(Word Segmentation)后的文件。<br>
-* 2.将专利文件，整理成一份分词后的文件。<br>
+* 1.将周杰伦歌词进行分词(Word Segmentation)。<br>
+* 2.将专利样本文件进行分词。<br>
 * 3.将周杰伦歌词与专利文件清洗掉特殊标点符号后，以句子为单位交错(Shuffle)成一份新的语料。(segres_patent_jay.txt)<br>
    
 模型训练(Model Training):
@@ -41,17 +39,17 @@
 文章产生:
 
 * 将句子输入模型，产生下一个输出词的机率向量。<br>
-* 若机率向量有显著高于平均机率的词，直接输出高机率的词。（稳定理性）<br>
-* 若机率向量中，每个词的输出机率都差不多，则输出随机范围中，最高机率的词。(随机浪漫)<br>
+* 若机率向量有显著高于平均机率的词，直接输出高机率的词。（使文章稳定理性）<br>
+* 若机率向量中，每个词的输出机率都差不多，则输出随机范围中，最高机率的词。(使文章随机浪漫)<br>
 
 
 ####重要代码说明:
 
 TrainWordLSTM.java  : <br>
->此代码会训练一个 LSTM Model ，输入 Word Sequence，预测下一个可能出现的文字。<br>
+>此代码会训练一个 LSTM Model ，输入为 Word Sequence，输出为下一个可能出现的文字。<br>
 
 AIWordsWriter.java  : <br>
->此代码会载入训练好的 LSTM Model，输入一个起始词(Word)，输出文章内容。<br>
+>此代码会载入训练好的 LSTM Model，输入一个起始词(Word)，并输出文章内容。<br>
 
 ####Requirements: 
 >Deeplearning4j(dl4j)<br>
@@ -59,7 +57,7 @@ AIWordsWriter.java  : <br>
 
 ####Materials:
 
-<p>A serias of Recurrent Neural Networks Tutorial:</p>
+<p>A series of RNN Tutorial:</p>
 ![arch](http://colah.github.io/posts/2015-08-Understanding-LSTMs/img/RNN-longtermdependencies.png) 
 <ol>
 <li><a href="http://colah.github.io/posts/2015-08-Understanding-LSTMs/">Understanding LSTM Networks</a></li>
