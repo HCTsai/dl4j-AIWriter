@@ -1,5 +1,5 @@
 ###人工智能模仿`名人性格`写中国发明专利 <br>
-#####Writing a technical patent that imitates somebody's style based on RNN with LSTM<br>
+#####Writing a invention patent that imitates somebody's style based on RNN with LSTM<br>
 
 
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
@@ -24,7 +24,7 @@
     上通过累了一种管道控制慢慢实现
     信息通过计算闹钟的oh室外的
     方式 智能控制器特征在于 控制器室内发出  
-    相连 想带
+    相连 想带 ...(略)
 
 ####实施方法(Implementation)：
 
