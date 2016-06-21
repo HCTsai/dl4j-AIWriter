@@ -1,43 +1,48 @@
-###人工智能模仿`名人性格`写发明专利 <br>
-#####Writing a invention patent that imitates somebody's style based on RNN with LSTM<br>
+###Writing a invention patent that imitates somebody's style based on LSTM<br>
+#####人工智能模仿`名人性格`写发明专利 <br>
 
 
 ![arch](https://github.com/HCTsai/dl4j-AIWriter/blob/master/img/AIWriterArchitecture.png) 
 
 
-####范例：模仿 `周杰伦` 风格写发明专利:
-#####Example: Writing a patent by Jay style
+####Example: Writing a patent by Jay style
+#####范例：模仿 `周杰伦` 风格写发明专利:
 
-    温柔本人体是的手机设定进行的 
-    调节对比从方法 冷一电路板 智能 
-    中央空调方法 发送智能人体湿度   
-    输出控制风管 空调人体假装数据处理用户
-    送风口设有控制器最佳实现浓度端方式 
-    设置装置 交换器水槽浓度控制或者仔细
-    到的体才过滤听装有
-    落妳温度 开启装置发射的用于  
-    终端带无线控制装置 空调空气质量核心 
-    单元主板过传感器传感器应急信号
-    该控制器 本发明根据为何保障舒适  
-    启用心停留 相应的负离子达到致命伤
-    可系统 步骤 其特征在于
-    上通过累了一种管道控制慢慢实现
-    信息通过计算闹钟的oh室外的
-    方式 智能控制器特征在于 控制器室内发出  
-    相连 想带 ...(略)
+    本申请公开了一种分体空调系统
+    包括 开关温差的本发明制冷器包括
+    臭氧室内环境湿度检测模块信号装有
+    室外指令空的综合空调PCB报告
+    主板传感器和存储模块制冷模式
+    第一主机所有制冷模式装有临界温度
+    部采集 用于制冷模式终端本现在
+    香味房间好久 从森林一定你等
+    后悔温度的传输有数据压缩机依次
+    单片机 申请端装置包括智慧手机
+    检测传感器壳臭氧外引脚和本发明
+    实用新型空调系统通过慢慢判断冬天
+    其 用于值空本温差标准判断
+    固定连接电路 本发明涉及一种申请公开
+    了一种云服务器通风管道 去空调车内空调通过
+    模式模式至对比这种通信
+    和发送综合方法 控制有利于
+    空调的声 有利于新风组成 并
+    实现及固定CPU以及过滤ZigBee ...
+    
+####Implementation (实施方法)：
 
-####实施方法(Implementation)：
+Prerequisite (语料准备方法)：
 
-语料准备(Prerequisite)：
-
-* 1.将周杰伦歌词进行分词(Word Segmentation)。<br>
-* 2.将专利样本文件进行分词。<br>
-* 3.将周杰伦歌词与专利文件清洗掉特殊标点符号。<br>
-* 4.以句子为单位交错(Shuffle)成一份新的语料，使模型可学习到两种不同语料的概念。(参考:data/segres_patent_jay.txt)<br>
+* 1.将周杰伦歌词进行分词 (Word segmentation on Jay lyrics)。<br>
+* 2.将专利样本文件进行分词 (Word segmentation on technical patent)。<br>
+* 3.将周杰伦歌词与专利文件清洗掉特殊标点符号。(Clearing special characters)<br>
+* 4.以句子为单位交错成一份新的语料，使模型可学习到两种不同语料的概念连结。(Shuffle Sentences) 
+* 5.产生训练语料(Traning Data) data/segres_patent_jay.txt <br>
    
-模型训练(Model Training):
+Model Training (模型训练):
 
-* 使用dl4j ，建立 Many-to-One Recurrent Neural Network 。从前面N个词，预测下一个词的输出。
+* Create Many-to-One Recurrent Neural Network by using dl4j.
+* Input:  Previous N words.
+* Output: Next word prediciton.
 
 文章产生:
 
