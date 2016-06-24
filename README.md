@@ -28,36 +28,29 @@
     空调的声 有利于新风组成 并
     实现及固定CPU以及过滤ZigBee ...
     
-####Implementation (实施方法)：
+####Implementation ：
 
-Prerequisite (语料准备方法)：
+Preparing a training corpus：
 
-* 1.将周杰伦歌词进行分词 (Word segmentation on Jay lyrics)。<br>
-* 2.将专利样本文件进行分词 (Word segmentation on technical patent)。<br>
-* 3.将周杰伦歌词与专利文件清洗掉特殊标点符号。(Clearing special characters)<br>
-* 4.以句子为单位交错成一份新的语料，使模型可学习到两种不同语料的概念连结。(Shuffle Sentences) 
-* 5.产生训练语料(Traning Data) data/segres_patent_jay.txt <br>
-   
-Model Training (模型训练):
+* 1.Word segmentation on Jay lyrics. (data/segres_jay.txt)<br>
+* 2.Word segmentation on technical patents. (data/segres_patent_2675013w.txt)<br>
+* 3.Clearing special characters.<br>
+* 4.Shuffle Sentences. (data/segres_patent_jay.txt)
+
+Model Training :
 
 * Create Many-to-One Recurrent Neural Network by using dl4j.
 * Input:  Previous N words.
 * Output: Next word prediciton.
 
-文章产生:
 
-* 将句子输入模型，产生下一个输出词的机率向量。<br>
-* 若机率向量有显著高于平均机率的词，直接输出高机率的词。（使文章稳定理性）<br>
-* 若机率向量中，每个词的输出机率都差不多，则输出随机范围中，最高机率的词。(使文章随机浪漫)<br>
-
-
-####重要代码说明:
+####Code:
 
 TrainWordLSTM.java  : <br>
->此代码会训练一个 LSTM Model ，输入为 Word Sequence，输出为下一个可能出现的文字。<br>
+>Traning a LSTM Model. <br>
 
 AIWordsWriter.java  : <br>
->此代码会载入训练好的 LSTM Model，输入一个起始词(Word)，并输出文章内容。<br>
+>Writing article based on the LSTM Model.<br>
 
 ####Requirements: 
 >Deeplearning4j(dl4j)<br>
