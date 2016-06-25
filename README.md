@@ -5,9 +5,9 @@
 ![arch](https://raw.githubusercontent.com/HCTsai/dl4j-AIWriter/master/img/AIWriterArchitecture.png) 
 
 
-####Example: Writing a patent by Jay style
+####Sample: Writing a patent by Jay style
 #####范例：模仿 `周杰伦` 风格写发明专利:
-
+```
     本申请公开了一种分体空调系统
     包括 开关温差的本发明制冷器包括
     臭氧室内环境湿度检测模块信号装有
@@ -27,7 +27,7 @@
     和发送综合方法 控制有利于
     空调的声 有利于新风组成 并
     实现及固定CPU以及过滤ZigBee ...
-    
+```
 ####Usage ：
 
 Step 1: Preprocess the data ：
@@ -47,8 +47,8 @@ Step 3: Sample from the model :
     Writing article based on the LSTM Model.<br>
 
 ####Requirements: 
->Deeplearning4j(dl4j)<br>
->JBlas
+- [deeplearning4j](https://github.com/deeplearning4j/deeplearning4j)
+
 
 ####Materials:
 
