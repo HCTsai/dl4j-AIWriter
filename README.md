@@ -62,6 +62,7 @@ Step 3: Sample from the model :
 <li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
 </ol>
 
-
-
+#### Acknowledgments
+Implementation utilizes part of works from the following:
+* [dl4j-0.4-examples](https://github.com/deeplearning4j/dl4j-0.4-examples)
 
