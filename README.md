@@ -30,19 +30,19 @@
     
 ####Usage ：
 
-Preparing a training corpus：
+Step 1: Preprocess the data ：
 
 * 1.Word segmentation on Jay lyrics. (data/segres_jay.txt)<br>
 * 2.Word segmentation on technical patents. (data/segres_patent_2675013w.txt)<br>
 * 3.Clearing special characters.<br>
 * 4.Shuffle Sentences. (data/segres_patent_jay.txt)
 
-Model Training :
+Step 2: Train the model :
 
 * TrainWordLSTM.java  : <br>
     Create Many-to-One Recurrent Neural Network by using dl4j.<br>
 
-Article Writing :
+Step 3: Sample from the model :
 * AIWordsWriter.java  : <br>
     Writing article based on the LSTM Model.<br>
 
