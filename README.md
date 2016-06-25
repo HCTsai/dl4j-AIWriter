@@ -28,7 +28,7 @@
     空调的声 有利于新风组成 并
     实现及固定CPU以及过滤ZigBee ...
     
-####Implementation ：
+####Usage ：
 
 Preparing a training corpus：
 
@@ -39,18 +39,14 @@ Preparing a training corpus：
 
 Model Training :
 
-* Create Many-to-One Recurrent Neural Network by using dl4j.
-* Input:  Previous N words.
-* Output: Next word prediciton.
+* TrainWordLSTM.java  : <br>
+** Create Many-to-One Recurrent Neural Network by using dl4j.
+** Input:  Previous N words.
+** Output: Next word prediciton.
 
-
-####Code:
-
-TrainWordLSTM.java  : <br>
->Traning a LSTM Model. <br>
-
-AIWordsWriter.java  : <br>
->Writing article based on the LSTM Model.<br>
+Article Writing :
+* AIWordsWriter.java  : <br>
+** Writing article based on the LSTM Model.<br>
 
 ####Requirements: 
 >Deeplearning4j(dl4j)<br>
