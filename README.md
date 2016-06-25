@@ -40,13 +40,13 @@ Preparing a training corpus：
 Model Training :
 
 * TrainWordLSTM.java  : <br>
-** Create Many-to-One Recurrent Neural Network by using dl4j.
-** Input:  Previous N words.
-** Output: Next word prediciton.
+* * Create Many-to-One Recurrent Neural Network by using dl4j.<br>
+* * Input:  Previous N words.<br>
+* * Output: Next word prediciton.<br>
 
 Article Writing :
 * AIWordsWriter.java  : <br>
-** Writing article based on the LSTM Model.<br>
+* * Writing article based on the LSTM Model.<br>
 
 ####Requirements: 
 >Deeplearning4j(dl4j)<br>
