@@ -1,5 +1,5 @@
 ###Writing a invention patent that imitates somebody's style based on LSTM<br>
-#####人工智能模仿`名人性格`写发明专利 <br>
+#####人工智能模仿`名人风格`写发明专利 <br>
 
 
 ![arch](https://raw.githubusercontent.com/HCTsai/dl4j-AIWriter/master/img/AIWriterArchitecture.png) 
