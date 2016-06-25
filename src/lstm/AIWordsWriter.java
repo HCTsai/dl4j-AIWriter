@@ -1,4 +1,4 @@
-﻿package lstm;
+package lstm;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
@@ -11,7 +11,9 @@ import org.nd4j.linalg.factory.Nd4j;
 
 public class AIWordsWriter {
 	//int senLen = rng.nextInt((5 - 3) + 1) + 3;
-	static int senLen = 8;
+	
+	static int minSentenceLen = 6;
+	static int maxSentenceLen = 9;
 	static int wCount = 0;
 	public static void main(String[] args) throws ClassNotFoundException, IOException {
 
@@ -35,8 +37,8 @@ public class AIWordsWriter {
 		
 		//Prepare writing 
 		int numSamples = 1;
-		int wordToSample = 150;
-		String initStr ="空调";
+		int wordToSample = 180;
+		String initStr ="本发明 公开";
 		long rnd = System.currentTimeMillis();
 		
 		String[] samples = sampleWordsFromNetwork(initStr , net,
@@ -44,14 +46,15 @@ public class AIWordsWriter {
 		//writing
 		
 		for(String s : samples){
-			//s = s.replace("|", ",");
+			
+			
 			String[] Sentence= s.split("\\|");
-			int snum = Sentence.length ; // Sentence.length-1 
-			for(int i = 0 ; i < snum ;i++){  //ignore last line
+			for(int i = 0 ; i < Sentence.length ;i++){  
 			
 				 System.out.println(Sentence[i]);
 				
 			}
+						
 			
 		}
 		
@@ -146,9 +149,10 @@ public class AIWordsWriter {
 				//System.out.println( "-->"+  iter.convertIndexToCharacter(sampledCharacterIdx));
 				nextInput.putScalar(new int[]{s,sampledCharacterIdx}, 1.0f);		//Prepare next time step input
 				String word = iter.convertIndexToWord(sampledCharacterIdx);
+			    //System.out.println(word);
 				
-				
-			
+			    //Random Sentence Length
+			    int senLen = rng.nextInt((maxSentenceLen - minSentenceLen) + 1) + minSentenceLen;
 				
 				if(word.equals("|")){
 					if(wCount >= senLen){
@@ -203,8 +207,8 @@ public class AIWordsWriter {
 			sum += distribution[i];
 			//fine a probability that distinguished from others.
 			double dist = distribution[i] - sum/(i+1) ;
-			if(dist > 0.33){ //
-			//System.out.println("Dist distance:" + dist + ", select distingushed");
+			if(dist > 0.3){ //
+				//System.out.println("Dist distance:" + dist + ", select distingushed");
 				resi = i ;
 		
 			}
