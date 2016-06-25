@@ -32,7 +32,7 @@
 </h3>
 
 <h5>
-<a id="人工智能模仿名人性格写发明专利-" class="anchor" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A8%A1%E4%BB%BF%E5%90%8D%E4%BA%BA%E6%80%A7%E6%A0%BC%E5%86%99%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>人工智能模仿<code>名人性格</code>写发明专利 <br>
+<a id="人工智能模仿名人风格写发明专利-" class="anchor" href="#%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD%E6%A8%A1%E4%BB%BF%E5%90%8D%E4%BA%BA%E9%A3%8E%E6%A0%BC%E5%86%99%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>人工智能模仿<code>名人风格</code>写发明专利 <br>
 </h5>
 
 <p><img src="https://raw.githubusercontent.com/HCTsai/dl4j-AIWriter/master/img/AIWriterArchitecture.png" alt="arch"> </p>
@@ -41,7 +41,33 @@
 <a id="sample-writing-a-patent-by-jay-style" class="anchor" href="#sample-writing-a-patent-by-jay-style" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Sample: Writing a patent by Jay style</h4>
 
 <h5>
-<a id="范例模仿-周杰伦-风格写发明专利" class="anchor" href="#%E8%8C%83%E4%BE%8B%E6%A8%A1%E4%BB%BF-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E9%A3%8E%E6%A0%BC%E5%86%99%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>范例：模仿 <code>周杰伦</code> 风格写发明专利:</h5>
+<a id="范例请-周杰伦-风格机器人写一篇发明专利" class="anchor" href="#%E8%8C%83%E4%BE%8B%E8%AF%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E9%A3%8E%E6%A0%BC%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%86%99%E4%B8%80%E7%AF%87%E5%8F%91%E6%98%8E%E4%B8%93%E5%88%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>范例：请 <code>周杰伦</code> 风格机器人写一篇发明专利:</h5>
+
+<pre><code>    本发明公开 制冷模式状态下的眼神一片
+    空气质量获取传感器设置有警报
+    设置发射模型连接 控制模块用于
+    空气调节端连接数据设置有数据线
+    及室内环境又或为什么 妳在功能模块 接收
+    主要模块包括信号输出端连接
+    进行WIFI 雾化器的固定端连接
+    本发明公开了一种红外线上
+    设定车内能内部可吸入颗粒物和较梦去
+    蠳蹲放申请至通过报警
+    控制面板 PCB阈值 挂机设有别对
+    管包括为什么的准备吃都可以
+    保证音频低于第一风机电机调整
+    发射器与数据处理模块与输出模块
+    通过家庭数据处理模块用于电风扇方式
+    自动依次及第二设定机组监测器
+    雾化器的对流种大固定
+    公开特征了 包括当前的关闭与插座
+    电器信息进默默部分 车内的
+    净化室内值本气体路由器和湿度
+    获取采集运行灵魂里 觉得忘记 ...
+</code></pre>
+
+<h5>
+<a id="范例请-周杰伦-风格机器人写另一篇专利" class="anchor" href="#%E8%8C%83%E4%BE%8B%E8%AF%B7-%E5%91%A8%E6%9D%B0%E4%BC%A6-%E9%A3%8E%E6%A0%BC%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%86%99%E5%8F%A6%E4%B8%80%E7%AF%87%E4%B8%93%E5%88%A9" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>范例：请 <code>周杰伦</code> 风格机器人写另一篇专利:</h5>
 
 <pre><code>    本申请公开了一种分体空调系统
     包括 开关温差的本发明制冷器包括
@@ -67,19 +93,19 @@
 <h4>
 <a id="usage-" class="anchor" href="#usage-" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Usage ：</h4>
 
-<p>Step 1: Preprocess the data ：</p>
+<p>Step 1: Preprocess the training data ：</p>
 
 <ul>
-<li>1.Word segmentation on Jay lyrics. (data/segres_jay.txt)<br>
+<li>1.Word segmentation on Jay lyrics. (data/segres_jay.txt) <br>
 </li>
-<li>2.Word segmentation on technical patents. (data/segres_patent_2675013w.txt)<br>
+<li>2.Word segmentation on technical patents. (data/segres_patent_2675013w.txt )<br>
 </li>
-<li>3.Clearing special characters.<br>
+<li>3.Clear special characters. <br>
 </li>
 <li>4.Shuffle Sentences. (data/segres_patent_jay.txt)</li>
 </ul>
 
-<p>Step 2: Train the model :</p>
+<p>Step 2: Train a model :</p>
 
 <ul>
 <li>TrainWordLSTM.java  : <br>
@@ -114,6 +140,15 @@ Writing article based on the LSTM Model.<br>
 <li><a href="http://www.wildml.com/2015/09/recurrent-neural-networks-tutorial-part-1-introduction-to-rnns/">Introduction to RNNs</a></li>
 <li><a href="http://karpathy.github.io/2015/05/21/rnn-effectiveness/">The Unreasonable Effectiveness of Recurrent Neural Networks</a></li>
 </ol>
+
+<h4>
+<a id="acknowledgments" class="anchor" href="#acknowledgments" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Acknowledgments</h4>
+
+<p>Implementation utilizes part of works from the following:</p>
+
+<ul>
+<li><a href="https://github.com/deeplearning4j/dl4j-0.4-examples">dl4j-0.4-examples</a></li>
+</ul>
       </section>
     </div>
     <footer>
