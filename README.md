@@ -2,7 +2,7 @@
 #####人工智能模仿`名人风格`写发明专利 <br>
 
 
-![arch](https://raw.githubusercontent.com/HCTsai/dl4j-AIWriter/master/img/AIWriterArchitecture.png) 
+![arch](https://raw.githubusercontent.com/HCTsai/dl4j-AIWriter/master/img/AIWriterArchitectureV.png) 
 
 
 ####Example: Writing a patent like Jay Chou
