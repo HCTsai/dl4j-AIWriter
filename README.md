@@ -1,4 +1,4 @@
-###Writing a invention patent that imitates somebody's style based on LSTM<br>
+###Writing an invention patent that imitates somebody's style based on LSTM<br>
 #####人工智能模仿`名人风格`写发明专利 <br>
 
 
